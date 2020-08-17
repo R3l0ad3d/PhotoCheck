@@ -15,6 +15,7 @@
 		2C163A8D24EA405A00F7EA6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C163A8B24EA405A00F7EA6A /* LaunchScreen.storyboard */; };
 		2C163A9824EA405A00F7EA6A /* PhotoCheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C163A9724EA405A00F7EA6A /* PhotoCheckTests.swift */; };
 		2C163AA324EA405A00F7EA6A /* PhotoCheckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C163AA224EA405A00F7EA6A /* PhotoCheckUITests.swift */; };
+		2C163AB224EA497B00F7EA6A /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C163AB124EA497B00F7EA6A /* Photos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2C163A9E24EA405A00F7EA6A /* PhotoCheckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoCheckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C163AA224EA405A00F7EA6A /* PhotoCheckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCheckUITests.swift; sourceTree = "<group>"; };
 		2C163AA424EA405A00F7EA6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C163AB124EA497B00F7EA6A /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C163AB224EA497B00F7EA6A /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				2C163A9624EA405A00F7EA6A /* PhotoCheckTests */,
 				2C163AA124EA405A00F7EA6A /* PhotoCheckUITests */,
 				2C163A7E24EA405900F7EA6A /* Products */,
+				2C163AB024EA497B00F7EA6A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +130,14 @@
 				2C163AA424EA405A00F7EA6A /* Info.plist */,
 			);
 			path = PhotoCheckUITests;
+			sourceTree = "<group>";
+		};
+		2C163AB024EA497B00F7EA6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C163AB124EA497B00F7EA6A /* Photos.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,6 +451,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N963Y7TNMV;
 				INFOPLIST_FILE = PhotoCheck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N963Y7TNMV;
 				INFOPLIST_FILE = PhotoCheck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
